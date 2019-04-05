@@ -1,0 +1,52 @@
+body{
+    font-size: 30pt;
+    max-width: 1560px;
+    margin: auto;
+}
+header{
+    height: 0;
+    width: 100%;
+    background: url('image/header.jpg') no-repeat;
+    background-size: contain;
+    color: #fff;
+    position: relative;
+    padding-bottom: 64.1%;
+}
+#label{
+    position: absolute;
+    left: 14%;
+    top: 10%;
+}
+#language{
+    width: 265px;
+    right: 15%;
+    top: 10%;
+    position:absolute;
+}
+#language label{
+    cursor: pointer;
+    font-size: 0.5em;
+    color: #ffffff90;
+}
+#change-language input{
+    display: none;
+}
+#boka-decor{
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+.button{
+    width: 32%;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    text-align: center;
+    margin: 166px auto 0;
+}
+/* nav{
+    font-size: 20pt;
+}
+
+A GREAT DATING PLACE = 30pt;
+Discover 30pt;
+Get Started 80pt    */
