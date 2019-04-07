@@ -1,33 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Boko</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<img id='label' src='image/label.png'>
-		<div id='language'>
-			<form id='change-language'>
-				<input id='english' type='radio' name='language' value='english'><label for="english">English</label>
-				<input id='bangla' type='radio' name='language' value='bangla'><label for="bangla">Bangla</label>
-				<input id='arabic' type='radio' name='language' value='arabic'><label for="arabic">Arabic</label>
-				<input id='spanish' type='radio' name='language' value='spanish'><label for="spanish">Spanish</label>
-			</form>
-		</div>
-		<div id='boka-decor'>
-			<img src='image/boka-decor.png'><br>
-			<div id='discover' class='button'>Discover</div>
+		<div class="container">
+			<img class='logo' src="image\boka.png" alt="Boko">
+			<div class="lang">
+				<ul>
+					<li id='English'>English</li>
+					<li id='Bangla'>Bangla</li>
+					<li id='Arabic'>Arabic</li>
+					<li id='Spanish'>Spanish</li>
+				</ul>
+			</div>
+			<div class="great-discover">
+				<img src="image\a-great-dating-place.png" alt="Boka a great dating place">
+				<button>Discover</button>
+			</div>
 		</div>
 	</header>
 	<main>
-		<section>
-			
+		<section class="form-authorization">
+			<div class="container">
+				<form action="">
+					<div>
+						<div class="row"><img src="image\get-started.png" alt="get-started"></div>
+						<div class="row i-am btn1" content="I am"><button>Men</button><button>Women</button></div>
+						<div class="row looking btn1" content='looking'><button class='dark'>Men</button><button class='dark'>Women</button></div>
+						<div class="row email" content='email'><input type="email" placeholder="wrobil1267@gmail.com"></div>
+						<div class="row password" content='password'><input type="password" placeholder="**********"></div>
+						<div class="row"><button class="join dark">Join now</button></div>
+						<div class="row by-registering"><span>By registering you agree to the Terms and Conditions or Privacy Policy.<br>
+							You will receive all communication from Boka directly in your mail box.</span></div>
+					</div>
+				</form>
+			</div>
 		</section>
 		<section>
-			
+			<div class="container">
+
+			</div>
 		</section>
 	</main>
-	<footer>
-		
-	</footer>
 </body>
+</html>

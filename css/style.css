@@ -3,56 +3,205 @@
           box-sizing: border-box;
 }
 
-body {
-  font-size: 30pt;
-}
-
-header, main, footer {
+.container {
   max-width: 1560px;
   margin: auto;
-}
-
-header {
-  background: url("../image/header.jpg") no-repeat;
-  background-size: contain;
-  color: #fff;
   position: relative;
-  height: 1000px;
 }
 
-#label {
-  position: absolute;
-  left: 14%;
-  top: 10%;
+@font-face {
+  font-family: 'Roboto Light';
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-#language {
-  width: 265px;
-  right: 15%;
-  top: 10%;
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../fonts/Roboto-Thin.eot");
+  src: url("../fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-#language label {
-  cursor: pointer;
-  font-size: 0.5em;
-  color: #ffffff90;
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-#change-language input {
-  display: none;
+body {
+  font-family: 'Roboto Light', sans-serif;
 }
 
-#boka-decor {
-  position: absolute;
-  top: 35%;
-  right: 15%;
-}
-
-.button {
-  width: 32%;
-  border: 1px solid #FFF;
+button {
+  background: transparent;
   border-radius: 8px;
+  border: 1px solid #fff;
   text-align: center;
-  margin: 202px auto 0;
+  cursor: pointer;
+}
+
+header .container {
+  height: 1000px;
+  background: url(../image/layer-1.jpg) center no-repeat;
+}
+
+header > .container > * {
+  position: absolute;
+}
+
+header .logo {
+  margin: 7.1% 0 0 13.5%;
+}
+
+.lang {
+  right: 0;
+  margin: 7.3% 12.7% 0 0;
+}
+
+.lang ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 343px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  color: #11a8ab;
+}
+
+.lang li {
+  cursor: pointer;
+}
+
+.lang li:first-child {
+  color: #fff;
+}
+
+.great-discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  bottom: 0;
+  margin: 0 18.8% 19.5% 0;
+}
+
+.great-discover button {
+  margin: 0 auto;
+  margin-top: 131px;
+  width: 262px;
+  height: 70px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 12px;
+}
+
+.form-authorization {
+  color: #1f253d;
+}
+
+.form-authorization .container {
+  height: 1325px;
+}
+
+.form-authorization .container > form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 570px;
+  height: 767px;
+  margin: 280px auto;
+  left: 125px;
+}
+
+.form-authorization .row.btn1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+.form-authorization button {
+  border: 1px solid #1f253d;
+  height: 68px;
+  width: 195px;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.form-authorization .join {
+  width: 292px;
+  height: 82px;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.form-authorization .dark {
+  background: #1f253d;
+  color: white;
+}
+
+.form-authorization .email, .form-authorization .password {
+  padding-left: 43px;
+}
+
+.form-authorization input {
+  border: none;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+  width: 500px;
+}
+
+.form-authorization .i-am, .form-authorization .looking, .form-authorization .email, .form-authorization .password {
+  position: relative;
+}
+
+.form-authorization .i-am::before, .form-authorization .looking::before, .form-authorization .email::before, .form-authorization .password::before {
+  position: absolute;
+  left: -192px;
+  content: attr(content);
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.form-authorization .i-am::before, .form-authorization .looking::before {
+  top: 17px;
+}
+
+.form-authorization .by-registering {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
 }
 /*# sourceMappingURL=style.css.map */
