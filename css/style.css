@@ -61,9 +61,6 @@ header .logo {
 .lang {
   right: 0;
   margin: 6.3% 12.7% 0 0;
-}
-
-.lang ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,14 +74,22 @@ header .logo {
   color: #11a8ab;
 }
 
-.lang li {
+.lang input {
+  display: none;
+}
+
+.lang input:checked + label {
+  color: #fff;
+}
+
+.lang label {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   cursor: pointer;
 }
 
-.lang li:first-child {
+.lang label:first-child {
   color: #fff;
 }
 
@@ -421,7 +426,7 @@ header .logo {
 }
 
 @media (max-width: 352px) {
-  .lang ul {
+  .lang {
     width: 310px;
   }
 }
