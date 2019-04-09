@@ -1,17 +1,17 @@
 .form-authorization
 	color: $dark
-	& .container
-		height: 1325px
-	& .container > form > div
+	& .container > div
 		display: flex
 		position: relative
 		flex-direction: column
 		align-content: space-between
-		justify-content: space-between
-		width: 570px
+		max-width: 570px
 		height: 767px
-		margin: 280px auto
-		left: 125px
+		margin: 280px auto 
+		left: 60px
+	& img
+		margin: 0 auto
+		display: block
 	& .row.btn1
 		display: flex
 		justify-content: space-around
@@ -41,20 +41,45 @@
 		+regular
 		font-size: 25px;
 		letter-spacing: 2.5px;
-		width: 500px
+		max-width: 500px
 	& .i-am, .looking, .email, .password
 		position: relative
 	& .i-am::before, .looking::before, .email::before, .password::before
 		position: absolute
-		left: -192px
+		left: -150px
 		content: attr(content)
 		+light
 		font-size: 30px
 		font-weight: 300
 		letter-spacing: 3px
+		font-stretch: condensed
 	& .i-am::before, .looking::before
 		top: 17px
 	& .by-registering
 		font-size: 15px
 		font-weight: 300
 		letter-spacing: 1.5px
+
+
+.img-container, .description-container
+	max-width: 1175px
+	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	justify-content: center
+
+.description-container
+	margin-top: 178px
+	& .thin
+		margin-top: 20px
+		+thin
+		font-size: 20px
+		font-weight: 100
+		letter-spacing: 2px
+	& .light
+		margin: 252px 0 69px 0
+		+light
+		font-size: 20px
+		font-weight: 300
+		letter-spacing: 2px

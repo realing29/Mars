@@ -60,15 +60,16 @@ header .logo {
 
 .lang {
   right: 0;
-  margin: 7.3% 12.7% 0 0;
+  margin: 6.3% 12.7% 0 0;
 }
 
 .lang ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  position: relative;
   width: 343px;
+  padding: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -77,6 +78,9 @@ header .logo {
 }
 
 .lang li {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
   cursor: pointer;
 }
 
@@ -112,11 +116,7 @@ header .logo {
   color: #1f253d;
 }
 
-.form-authorization .container {
-  height: 1325px;
-}
-
-.form-authorization .container > form > div {
+.form-authorization .container > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,13 +127,15 @@ header .logo {
           flex-direction: column;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 570px;
+  max-width: 570px;
   height: 767px;
   margin: 280px auto;
-  left: 125px;
+  left: 60px;
+}
+
+.form-authorization img {
+  margin: 0 auto;
+  display: block;
 }
 
 .form-authorization .row.btn1 {
@@ -178,7 +180,7 @@ header .logo {
   font-family: 'Roboto Regular', sans-serif;
   font-size: 25px;
   letter-spacing: 2.5px;
-  width: 500px;
+  max-width: 500px;
 }
 
 .form-authorization .i-am, .form-authorization .looking, .form-authorization .email, .form-authorization .password {
@@ -187,12 +189,13 @@ header .logo {
 
 .form-authorization .i-am::before, .form-authorization .looking::before, .form-authorization .email::before, .form-authorization .password::before {
   position: absolute;
-  left: -192px;
+  left: -150px;
   content: attr(content);
   font-family: 'Roboto Light', sans-serif;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 3px;
+  font-stretch: condensed;
 }
 
 .form-authorization .i-am::before, .form-authorization .looking::before {
@@ -203,5 +206,212 @@ header .logo {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 1.5px;
+}
+
+.img-container, .description-container {
+  max-width: 1175px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.description-container {
+  margin-top: 178px;
+}
+
+.description-container .thin {
+  margin-top: 20px;
+  font-family: 'Roboto Thin', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.description-container .light {
+  margin: 252px 0 69px 0;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.nav-container {
+  max-width: 1141px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-container a {
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  height: 54px;
+  margin-right: 5px;
+}
+
+.nav-container a:first-child {
+  border-bottom: 8px solid #1f253d;
+}
+
+@media (max-width: 1173px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1173px) {
+  img[alt="layer-6"], img[alt="layer-4"], img[alt="layer-5"] {
+    margin-top: -4px;
+  }
+  img[alt="layer-8"] {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1186px) {
+  .img-container {
+    max-width: 700px;
+  }
+  .img-container img[alt="layer-7"] {
+    display: none;
+  }
+  .img-container img[alt="layer-8"] {
+    width: 90%;
+  }
+  .img-container img[alt="layer-6"] {
+    width: 27%;
+  }
+  .img-container img[alt="layer-4"] {
+    width: 43%;
+  }
+  .img-container img[alt="layer-5"] {
+    width: 26%;
+  }
+  .description-container img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 900px) {
+  .form-authorization .container > div .i-am {
+    margin-top: 86px;
+  }
+  .form-authorization .container > div .looking {
+    margin-top: 20px;
+  }
+  .form-authorization .container > div .email {
+    margin-top: 69px;
+  }
+  .form-authorization .container > div .password {
+    margin-top: 47px;
+    margin-bottom: 120px;
+  }
+  .form-authorization .container > div .by-registering {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 900px) {
+  header img[alt='Boko'] {
+    display: none;
+  }
+  header .container {
+    background-position: -100px -150px;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .container .lang, header .container .great-discover {
+    position: static;
+    margin: 0 auto;
+  }
+  header .container .great-discover img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .container .great-discover button {
+    margin: 70px auto 70px;
+  }
+  .form-authorization .container > div {
+    margin: 50px auto;
+    left: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form-authorization .i-am::before, .form-authorization .looking::before, .form-authorization .email::before, .form-authorization .password::before {
+    left: 42px;
+    top: -50px;
+  }
+  .form-authorization img {
+    width: 90%;
+  }
+  .description-container {
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 430px) {
+  .form-authorization input {
+    width: 500px;
+  }
+}
+
+@media (max-width: 430px) {
+  .form-authorization .email, .form-authorization .password {
+    padding-left: 15px;
+  }
+  .form-authorization button:last-child {
+    margin-left: 10px;
+  }
+  .form-authorization input {
+    font-size: 20px;
+    width: 280px;
+  }
+  .thin, .light {
+    text-align: center;
+  }
+  .nav-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 352px) {
+  .lang ul {
+    width: 310px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
