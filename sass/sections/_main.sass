@@ -12,6 +12,12 @@
 	& img
 		margin: 0 auto
 		display: block
+	& .btn1 input
+		display: none
+	& input:checked + button
+		border: 3px solid $dark
+	& input:checked + .dark
+		border: 3px solid #fff
 	& .row.btn1
 		display: flex
 		justify-content: space-around
@@ -20,16 +26,26 @@
 		border: 1px solid $dark
 		height: 68px
 		width: 195px
+		color: $dark
 		+light
 		font-size: 25px
 		font-weight: 300
 		letter-spacing: 1.5px
+		position: relative
+	& button:last-child
+		margin-left: 10px
+	& button label
+		position: absolute
+		height: 100%
+		width: 100%
+		left: 0
+		top: 0
 	& .join
 		width: 292px
 		height: 82px
 		display: block
-		margin: 0 auto
-		letter-spacing: 2px
+		margin: 0 auto !important
+		letter-spacing: 3px
 		font-size: 30px
 	& .dark
 		background: $dark
@@ -55,6 +71,8 @@
 		font-stretch: condensed
 	& .i-am::before, .looking::before
 		top: 17px
+	& .looking::before
+		+condensed
 	& .by-registering
 		font-size: 15px
 		font-weight: 300
@@ -78,7 +96,7 @@
 		font-weight: 100
 		letter-spacing: 2px
 	& .light
-		margin: 252px 0 69px 0
+		margin: 247px 0 66px 0
 		+light
 		font-size: 20px
 		font-weight: 300
